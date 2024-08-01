@@ -10,22 +10,25 @@
     />
   </head>
   <body>
-    <div class="container">
-      <h1>The Dicee Game</h1>
-      <p>Click on the dice to roll! <br> Player 1 goes first</p>
-      <div class="dice">
-        <p>Player 1</p>
-        <img draggable="false" onclick="roll1()" class="img1" src="./images/dice6.png" />
-      </div>
 
-      <div class="dice">
-        <p>Player 2</p>
-        <img draggable="false" onclick="roll2()" class="img2" src="./images/dice6.png" />
-      </div>
+    <div class="container">
+
+      <h1>The Dicee Game</h1>
+      <p>Click on the dice to roll!</p>
+
+        <div class="dice">
+          <p>Player 1</p>
+          <img draggable="false" onclick="roll1()" class="img1" src="./images/dice6.png" />
+        </div>
+
+        <div class="dice">
+          <p>Player 2</p>
+          <img draggable="false" class="img2" src="./images/dice6.png" />
+        </div>
     </div>
 
     <div class="btnrefresh">
-    <button onclick="restart()">Restart !</button>
+        <button onclick="restart()">Restart !</button>
     </div>
 
 
