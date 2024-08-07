@@ -12,17 +12,18 @@
 }
 
 body {
-  background: url(./images/white1.jpg);
-  background-repeat: no-repeat;
+  background: url(./images/whiteinverted.jpg);
+  /* background-repeat: no-repeat; */
   background-size: cover;
+  /* height: 100px; */
   /* background-color: #727272; */
 }
 
 h1 {
-  margin: 30px;
+  margin: 100px 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 4px 3px 3px #000000;
-  font-size: 6rem;
+  font-size: 8rem;
   text-decoration: underline;
   color: #ff8222;
 }
@@ -32,13 +33,13 @@ p {
   color: #32ffbb;
   font-weight: 600;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 4px 4px 3px black;
   line-height: 50px;
 }
 
 img {
   width: 70%;
-  /* box-shadow: 0px 0px 4px black; */
+  padding: 10px;
   
 }
 
@@ -61,10 +62,12 @@ footer {
   text-align: center;
 }
 
-button{
+.restart-button{
   visibility: hidden;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: pointer;
+  font-size: 16pt;
+  font-weight: 600;
   margin-top: 20px;
   height: 50px;
   width: 200px;
@@ -75,5 +78,42 @@ button{
 }
 
 button:hover{
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(216, 147, 19);
+}
+
+@media (max-width:786px){
+
+  .container{
+    width: 100%;
+  }
+
+  h1{
+    margin-top: 60px;
+    font-size: 36pt;
+    /* width: 100%; */
+  }
+
+  p{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+
+  img{
+    width: 40%;
+  }
+
+  .dice {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    /* border: 2px solid black; */
+  }
+
+  .restart-button{
+    margin-bottom: 20px;
+  }
+
 }

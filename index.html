@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicee</title>
+   
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
@@ -11,6 +13,7 @@
   </head>
   <body>
 
+
     <div class="container">
 
       <h1>The Dicee Game</h1>
@@ -18,7 +21,7 @@
 
         <div class="dice">
           <p>Player 1</p>
-          <img draggable="false" onclick="roll1()" class="img1" src="./images/dice6.png" />
+          <img draggable="false" class="img1" src="./images/dice6.png" />
         </div>
 
         <div class="dice">
@@ -28,7 +31,7 @@
     </div>
 
     <div class="btnrefresh">
-        <button onclick="restart()">Restart !</button>
+        <button class="restart-button" onclick="restart()">Restart !</button>
     </div>
 
 
@@ -36,3 +39,5 @@
     <script src="./index.js"></script>
   </body>
 </html>
+
+!
